@@ -229,10 +229,20 @@ p{
     font-size: 36px ;
     font-weight: 700;
 }
+.discount span{
+    color:red ; 
+}
 .explore{
     padding : .75rem 2.5rem; 
     border-radius : 5px ; 
-    border: none; 
+    border: none;
+    font-size: 19px;
+    margin-top: 10px;
+
+}
+.explore:hover{
+    background-color: #088178;
+    color: white ;
 }
 .new-fashion
 {
@@ -246,6 +256,7 @@ p{
 .new-1{
     display: flex ;
     gap: 2rem ;
+    margin-top: 3rem ;
 }
 .new-2{
     margin: 3rem ;
@@ -476,4 +487,28 @@ input{
 }
 .col-1 img {
     padding: 1rem 0rem ;
+}
+.follow{
+    display: flex ;
+}
+.follow-us{
+    display: flex ;
+    font-size:1.5rem ;
+   
+    margin: 3rem;
+    flex-direction: column;
+
+
+}
+.follow-us h5{
+    font-size: 1.5rem ;
+}
+
+.social-section {
+     padding-top: 1.5rem ;
+     display: flex;
+     align-items: flex-end;
+} 
+.About-us{
+    display: flex ;
 }

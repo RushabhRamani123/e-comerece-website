@@ -490,6 +490,7 @@ input{
 }
 .follow{
     display: flex ;
+    gap: 6rem;
 }
 .follow-us{
     display: flex ;
@@ -498,7 +499,7 @@ input{
     margin: 3rem;
     flex-direction: column;
 
-
+    margin-left: 0px;
 }
 .follow-us h5{
     font-size: 1.5rem ;
@@ -510,5 +511,64 @@ input{
      align-items: flex-end;
 } 
 .About-us{
+    display: flex;
+    flex-direction: column;
+    /* gap: 3rem ; */
+    margin-top: 4rem ;
+}
+.About-us h4{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.About-us a{
+    font-size: 19px;
+    color: black;
+    margin-top: 15px;
+
+}
+.About-us .links_Ab{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem ;
+
+}
+/* My Account  */
+.My-Account{
+    display: flex;
+    flex-direction: column;
+    /* gap: 3rem ; */
+    margin-top: 4rem ;
+    margin-left: 4rem;
+}
+.My-Account h4{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.My-Account a{
+    font-size: 19px;
+    color: black;
+    margin-top: 15px;
+
+}
+.My-Account .links_MY{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem ;
+}
+.img_app{
     display: flex ;
+    gap: .5rem;
+    margin-top: 1rem ;
+}
+.app{
+    height: 64px;
+    width: 197px;
+    padding: 0rem;
+    border: rgb(0, 143, 38) 1px solid;
+    border-radius: 5px;
+}
+.payment-app{
+    margin-top: 2rem;
+    height: 55px;
+    width: 289px;
 }

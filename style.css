@@ -369,3 +369,43 @@ color: #088178;
 .ba h3{
     color:red ;
 }
+.newsletter{
+    background-image: url("/img/banner/b14.png");
+    background-color: #040048;
+    display: flex ;
+    flex-direction: row ;
+    background-position: 20% 30% ;
+    background-size: cover ;
+    /* text-align: center ; */
+    justify-content: space-between; ;
+    padding: 1rem 0rem ; 
+}
+.news 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color : white ; 
+}
+.form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.form .input  {
+    color: white;
+    font-size: 25px;
+    border-radius: 2px ;
+    padding: 6px 0px ;
+    border: 1px solid white;
+    outline: none ;
+    
+}
+.form .sign-up{
+outline: none ;
+padding: 6px 6px   ;
+margin-right: 10px ;
+color: white ; 
+background-color: #088178;
+border: 1px solid #088178;
+}

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="navigation-bar">
+        <div class="logo">
+            <img src="./img/logo.png" alt="">
+        </div>
+        <div class="links">
+            <ul id="navbar">
+
+                <li> <img id="cross"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAzdJREFUSEvF1lnIrlMUB/DfMUeHkyGhRJmj3ChTUS7MY5kSuRBRhkKRZMgUkuHCdCGSqQxlLJKkyJAyhMyZMxySzEP/r/Wc3m973vM87zkX37p6nr3XXv+11v6vtdciCySLFgjXrMCrYldsgU3K6S/xMV7G32MDGQu8Nc7H4Vgyxfj3eBhX4qMhB4aA18ZVOA2Jdoz8gWtwKfLdK8sDTjofxY51MkYexFN4Ax9gtUr7ztgfR9RajiT1h+CbPuRpwNvjBaxfh56sqD8ZCHkr3IJ9Su+L4sTn7bk+4I3xGjYr5Utw8Zgcl05sXo1z6v8d7IJfJm30Ad+Po0rporqrGXCXqV6PM+vvBpy1POCd6v6i8zgOahDD6B+neNHuhYzPY3f8WVxI6c1JG/GdOKHSsg2WKeJA3FuEea4B3xuP4ehyuNveFm8V4a7ABX3Aa+A7LMbNRaZObyN8hjWrRMLgZ2szRHoCOf87NsUPE46ltg9DiLllH3AMPFMbByBMnpRE/Eh5H4D9ajPlFYeSzjSYXNGknITbayFZfL9N9Ym4oxTC6Mk0d4YOru6U+/utFtfCX3UFrbNRSY2/Xrqp6/SGeXd8bpVB1ruU9vEokSd9q9dmIs3a033K1WKX1l6YHYbPAz4b15bCuvh5iqFZgWPrp7IVjOta4GNxTylsh/d6gA+tttmX6rTLuTQ2sgPerrVjkD4xL+I8dy+WQpy4rzEwRK7cc9jbkut43FW20sFebYFT099iA9yNHOhkZcrpARyJr6vU/m2B838rTsavSPGndjsZaiBJc1I5GXFs5CVLjd+EMzpjbeeKYpp61sPSfTHnYcl6E0Rp77LdCw/S4fbEP8jLlUllTvoeiaT5uNq/DBf+jy7jFm7E6aV6G06ZPNYHvCFeqaYe3UwSeaXGyipVMt3L9G49FF0tT404G5mxXmoGgVPx6QB6Boj0+b1KL91vj+rT847OMvqkPz9UD8KbNfqENGn8KZP0+tRyN5sla6n7r/qcHRr21kHuOWxMCsdIZrMMiJev6LA3CZJOdl69PmmBfZLxNsNg3t2hK5l5oM9UuRs2bwb6D4uQKZtRMpTqUUZWRGnBgP8DPwusH5GG9lkAAAAASUVORK5CYII=" />
+                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+                <li><img id="lg-bag"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAXRJREFUSEvt1r9LVlEcx/GX4Kbg6iRSkG4m4pZRQ2OCm4Tg/9AgKE6Co+i/ENLgEgRBS5CUm4I4BWKSe+DSmsSR88jj7V7v90TwODxnO+d8zud9vz+4fAf0aA30iOtfwIOYxkz+6CMc43dJECXgpF3FCkYqkEtsYCcKLwHvYqnFeBuvI/Ao+BXeZsOLbP4l759hC2N5/wKf2uBR8Hc8QErpI/ysGI/iDEM4wNz/AD/MpslrHZsNpul8DVe5B37dBY9E/ARfs8lLfGgwnMf7fDeL1O2NKwJONfycHZ5jv8Etqrt+XgUP4yTXs61MJffnmMJN+qvg1BSdbi0xjmifdpXsr4i70/UGPzCO5ezcOasD1em6z26VqRpxXZ2itSt6e6/Bkfo1aRqzFYm4Dy7JQD/VN7/bfnNF/1LRBrv/zTWJb9FwCnUTOO28qRsE3mGh0LRNvofFblEdOJ2lMeZxzaDQBqjep/nrEB+rF5HRpxQW0vcM/AcLDWsfXKwkoAAAAABJRU5ErkJggg==" />
+                </li>
+            </ul>
+        </div>
+        <div id="mobile">
+            <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAXRJREFUSEvt1r9LVlEcx/GX4Kbg6iRSkG4m4pZRQ2OCm4Tg/9AgKE6Co+i/ENLgEgRBS5CUm4I4BWKSe+DSmsSR88jj7V7v90TwODxnO+d8zud9vz+4fAf0aA30iOtfwIOYxkz+6CMc43dJECXgpF3FCkYqkEtsYCcKLwHvYqnFeBuvI/Ao+BXeZsOLbP4l759hC2N5/wKf2uBR8Hc8QErpI/ysGI/iDEM4wNz/AD/MpslrHZsNpul8DVe5B37dBY9E/ARfs8lLfGgwnMf7fDeL1O2NKwJONfycHZ5jv8Etqrt+XgUP4yTXs61MJffnmMJN+qvg1BSdbi0xjmifdpXsr4i70/UGPzCO5ezcOasD1em6z26VqRpxXZ2itSt6e6/Bkfo1aRqzFYm4Dy7JQD/VN7/bfnNF/1LRBrv/zTWJb9FwCnUTOO28qRsE3mGh0LRNvofFblEdOJ2lMeZxzaDQBqjep/nrEB+rF5HRpxQW0vcM/AcLDWsfXKwkoAAAAABJRU5ErkJggg==" />
+            <img id="bar"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAGZJREFUSEvtlrENACAMw8pnnMZpfAYTC1W3CDOEA2JhUpUW0GkQNwx+Zt6qj+ohdp7yKtVLDE6c78DiC+c4t/o46WLX8877rlzYOGGqxU/scYryB4KVCwNja9GtlhvwWpQrrQIx1Rt3TwofeC3yFwAAAABJRU5ErkJggg==" />
+        </div>
+    </div>
+
+    <section class="prodetails">
+        <div class="single-pro">
+            <img src="img/products/f1.jpg" width="100%" id="mainImage" alt="">
+
+            <div class="small-image-group">
+                <div class="small-img">
+                    <img src="img/products/f1.jpg" width="100%" class="image-1" alt="">
+                </div>
+                <div class="small-img">
+                    <img src="img/products/f2.jpg" width="100%" class="image-1" alt="">
+                </div>
+                <div class="small-img">
+                    <img src="img/products/f4.jpg" width="100%" class="image-1" alt="">
+                </div>
+                <div class="small-img">
+                    <img src="img/products/f3.jpg" width="100%" class="image-1" alt="">
+                </div>
+            </div>
+        </div>
+        <div class=" pro-details">
+            <h6>Home / T-Shirt</h6>
+            <h4>Men's Fashion T Shirts</h4>
+            <h2>$139.00</h2>
+
+            <select>
+                <option>Select Size</option>
+                <option>XL</option>
+                <option>XXL</option>
+                <option>XXXL</option>
+                <option>Small</option>
+                <option>Large</option>
+            </select>
+            <input type="number" value="1">
+            <button>Add To Cart</button>
+            <h4>Product Details</h4>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui provident fugiat autem fugit non soluta.
+                Eos minus laborum, praesentium consectetur atque expedita ducimus Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Dolore, odit voluptatem molestias voluptatum delectus explicabo et, ipsum eum quidem
+                ad optio harum! Deserunt cupiditate consequuntur eius reiciendis aspernatur quis praesentium
+                repudiandae, temporibus qui dolores consectetur ducimus possimus optio ut inventore! Accusamus expedita
+                voluptatum soluta quibusdam fuga facere reiciendis magnam numquam, atque eveniet eum inventore
+                porro?</span>
+        </div>
+    </section>
+    <div class="products">
+        <div class="head">
+            <h2>Featured Products</h2>
+            <p>Summer Collection New Mordern Design </p>
+        </div>
+
+        <div class="collections-1">
+            <div class="product-1">
+
+                <div class="img"> <img src="/img/products/f1.jpg" id="image-1" alt=""></div>
+                <div class="details">
+                    <p>adidas</p>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="ratings">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAq5JREFUSEvFlstrFEEQh3/VvUsk2engTBLDJjkq5ubJW3yhYEAQwQRPggsieDN68T8QNOpNEE3Qg+ADD+LjkoP4OHgTvBjJReIa3HVWdiauxExPyaxJ3Gx2NjPjhvSlmZqq+qq6u7qLsEmDNomLxOBSWQ4HQZud+kWS4BOBS05qiMGvAiCBhkzlvYkLTwS2HfkcQDVjAM8spY9sOLjoYIeAnK4BsQ892K1QK1s3jtgZlxx5h4GTdZ4nLaVz69JqFGKBiz+RFVp+BpCqg3iLpPt6DRSiwmOBbSd1BeDzjZwz6FKX8i62HFwswhBtMg/ACHHuVgy9bYDwKwp8VcY/5tO7mP2dzNwHiCyCmZAF0M9AloC2Zk4ZWCDgK4BZMOZAlAf8fDALEtNbM4vvl+1XwLYrR8G4HyXaxDqEEcvQj/7W/9Kwy6nDIE50C0UMhAm011Te61Xg4KPkyhPMuFcbUESnTdWCLRDAcVPpp2uWelmwAXCXQMOm8t7WRtewnFoIt0nI/Wbm94f6JQmt4/+GM2Y19IGeTsw02oemF0hSOAEzWuo93R2YC9v8pmBmpEqudAFsiXfI6JqlvLFmNk3B38vp3UT+u3jQarF8tJQ3mBhsO2IMoPH44OAZ0QNWO74kWmrbkY8BHEsCJuKzpuHfSAr+BqAnxHh+SZ4JObVPTKWPxgYXytguSX4KcfqSU7raDJAn7zKwb40eoWJmtEmEhVjlZDsy6Chu1xm5RLhgGvpmrbzkijPMdLn+yWRBh7oy3lRc8ASAUytGjCmkdc5qx2wjR3YFA1iUEyAc/PefrlrKa9g4hJaT7cgHAEYAlAGcs5SejHLIbEcGwV4HoAA8tJQejZVxYR69ksVplv5EVzuCziPysCvohxY5X/i3ujuqjUGDIxDZXWsVYzV7rUT/AV6u4h/xGWFlAAAAAElFTkSuQmCC" />
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAq5JREFUSEvFlstrFEEQh3/VvUsk2engTBLDJjkq5ubJW3yhYEAQwQRPggsieDN68T8QNOpNEE3Qg+ADD+LjkoP4OHgTvBjJReIa3HVWdiauxExPyaxJ3Gx2NjPjhvSlmZqq+qq6u7qLsEmDNomLxOBSWQ4HQZud+kWS4BOBS05qiMGvAiCBhkzlvYkLTwS2HfkcQDVjAM8spY9sOLjoYIeAnK4BsQ892K1QK1s3jtgZlxx5h4GTdZ4nLaVz69JqFGKBiz+RFVp+BpCqg3iLpPt6DRSiwmOBbSd1BeDzjZwz6FKX8i62HFwswhBtMg/ACHHuVgy9bYDwKwp8VcY/5tO7mP2dzNwHiCyCmZAF0M9AloC2Zk4ZWCDgK4BZMOZAlAf8fDALEtNbM4vvl+1XwLYrR8G4HyXaxDqEEcvQj/7W/9Kwy6nDIE50C0UMhAm011Te61Xg4KPkyhPMuFcbUESnTdWCLRDAcVPpp2uWelmwAXCXQMOm8t7WRtewnFoIt0nI/Wbm94f6JQmt4/+GM2Y19IGeTsw02oemF0hSOAEzWuo93R2YC9v8pmBmpEqudAFsiXfI6JqlvLFmNk3B38vp3UT+u3jQarF8tJQ3mBhsO2IMoPH44OAZ0QNWO74kWmrbkY8BHEsCJuKzpuHfSAr+BqAnxHh+SZ4JObVPTKWPxgYXytguSX4KcfqSU7raDJAn7zKwb40eoWJmtEmEhVjlZDsy6Chu1xm5RLhgGvpmrbzkijPMdLn+yWRBh7oy3lRc8ASAUytGjCmkdc5qx2wjR3YFA1iUEyAc/PefrlrKa9g4hJaT7cgHAEYAlAGcs5SejHLIbEcGwV4HoAA8tJQejZVxYR69ksVplv5EVzuCziPysCvohxY5X/i3ujuqjUGDIxDZXWsVYzV7rUT/AV6u4h/xGWFlAAAAAElFTkSuQmCC" />
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAq5JREFUSEvFlstrFEEQh3/VvUsk2engTBLDJjkq5ubJW3yhYEAQwQRPggsieDN68T8QNOpNEE3Qg+ADD+LjkoP4OHgTvBjJReIa3HVWdiauxExPyaxJ3Gx2NjPjhvSlmZqq+qq6u7qLsEmDNomLxOBSWQ4HQZud+kWS4BOBS05qiMGvAiCBhkzlvYkLTwS2HfkcQDVjAM8spY9sOLjoYIeAnK4BsQ892K1QK1s3jtgZlxx5h4GTdZ4nLaVz69JqFGKBiz+RFVp+BpCqg3iLpPt6DRSiwmOBbSd1BeDzjZwz6FKX8i62HFwswhBtMg/ACHHuVgy9bYDwKwp8VcY/5tO7mP2dzNwHiCyCmZAF0M9AloC2Zk4ZWCDgK4BZMOZAlAf8fDALEtNbM4vvl+1XwLYrR8G4HyXaxDqEEcvQj/7W/9Kwy6nDIE50C0UMhAm011Te61Xg4KPkyhPMuFcbUESnTdWCLRDAcVPpp2uWelmwAXCXQMOm8t7WRtewnFoIt0nI/Wbm94f6JQmt4/+GM2Y19IGeTsw02oemF0hSOAEzWuo93R2YC9v8pmBmpEqudAFsiXfI6JqlvLFmNk3B38vp3UT+u3jQarF8tJQ3mBhsO2IMoPH44OAZ0QNWO74kWmrbkY8BHEsCJuKzpuHfSAr+BqAnxHh+SZ4JObVPTKWPxgYXytguSX4KcfqSU7raDJAn7zKwb40eoWJmtEmEhVjlZDsy6Chu1xm5RLhgGvpmrbzkijPMdLn+yWRBh7oy3lRc8ASAUytGjCmkdc5qx2wjR3YFA1iUEyAc/PefrlrKa9g4hJaT7cgHAEYAlAGcs5SejHLIbEcGwV4HoAA8tJQejZVxYR69ksVplv5EVzuCziPysCvohxY5X/i3ujuqjUGDIxDZXWsVYzV7rUT/AV6u4h/xGWFlAAAAAElFTkSuQmCC" />
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAq5JREFUSEvFlstrFEEQh3/VvUsk2engTBLDJjkq5ubJW3yhYEAQwQRPggsieDN68T8QNOpNEE3Qg+ADD+LjkoP4OHgTvBjJReIa3HVWdiauxExPyaxJ3Gx2NjPjhvSlmZqq+qq6u7qLsEmDNomLxOBSWQ4HQZud+kWS4BOBS05qiMGvAiCBhkzlvYkLTwS2HfkcQDVjAM8spY9sOLjoYIeAnK4BsQ892K1QK1s3jtgZlxx5h4GTdZ4nLaVz69JqFGKBiz+RFVp+BpCqg3iLpPt6DRSiwmOBbSd1BeDzjZwz6FKX8i62HFwswhBtMg/ACHHuVgy9bYDwKwp8VcY/5tO7mP2dzNwHiCyCmZAF0M9AloC2Zk4ZWCDgK4BZMOZAlAf8fDALEtNbM4vvl+1XwLYrR8G4HyXaxDqEEcvQj/7W/9Kwy6nDIE50C0UMhAm011Te61Xg4KPkyhPMuFcbUESnTdWCLRDAcVPpp2uWelmwAXCXQMOm8t7WRtewnFoIt0nI/Wbm94f6JQmt4/+GM2Y19IGeTsw02oemF0hSOAEzWuo93R2YC9v8pmBmpEqudAFsiXfI6JqlvLFmNk3B38vp3UT+u3jQarF8tJQ3mBhsO2IMoPH44OAZ0QNWO74kWmrbkY8BHEsCJuKzpuHfSAr+BqAnxHh+SZ4JObVPTKWPxgYXytguSX4KcfqSU7raDJAn7zKwb40eoWJmtEmEhVjlZDsy6Chu1xm5RLhgGvpmrbzkijPMdLn+yWRBh7oy3lRc8ASAUytGjCmkdc5qx2wjR3YFA1iUEyAc/PefrlrKa9g4hJaT7cgHAEYAlAGcs5SejHLIbEcGwV4HoAA8tJQejZVxYR69ksVplv5EVzuCziPysCvohxY5X/i3ujuqjUGDIxDZXWsVYzV7rUT/AV6u4h/xGWFlAAAAAElFTkSuQmCC" />
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAq5JREFUSEvFlstrFEEQh3/VvUsk2engTBLDJjkq5ubJW3yhYEAQwQRPggsieDN68T8QNOpNEE3Qg+ADD+LjkoP4OHgTvBjJReIa3HVWdiauxExPyaxJ3Gx2NjPjhvSlmZqq+qq6u7qLsEmDNomLxOBSWQ4HQZud+kWS4BOBS05qiMGvAiCBhkzlvYkLTwS2HfkcQDVjAM8spY9sOLjoYIeAnK4BsQ892K1QK1s3jtgZlxx5h4GTdZ4nLaVz69JqFGKBiz+RFVp+BpCqg3iLpPt6DRSiwmOBbSd1BeDzjZwz6FKX8i62HFwswhBtMg/ACHHuVgy9bYDwKwp8VcY/5tO7mP2dzNwHiCyCmZAF0M9AloC2Zk4ZWCDgK4BZMOZAlAf8fDALEtNbM4vvl+1XwLYrR8G4HyXaxDqEEcvQj/7W/9Kwy6nDIE50C0UMhAm011Te61Xg4KPkyhPMuFcbUESnTdWCLRDAcVPpp2uWelmwAXCXQMOm8t7WRtewnFoIt0nI/Wbm94f6JQmt4/+GM2Y19IGeTsw02oemF0hSOAEzWuo93R2YC9v8pmBmpEqudAFsiXfI6JqlvLFmNk3B38vp3UT+u3jQarF8tJQ3mBhsO2IMoPH44OAZ0QNWO74kWmrbkY8BHEsCJuKzpuHfSAr+BqAnxHh+SZ4JObVPTKWPxgYXytguSX4KcfqSU7raDJAn7zKwb40eoWJmtEmEhVjlZDsy6Chu1xm5RLhgGvpmrbzkijPMdLn+yWRBh7oy3lRc8ASAUytGjCmkdc5qx2wjR3YFA1iUEyAc/PefrlrKa9g4hJaT7cgHAEYAlAGcs5SejHLIbEcGwV4HoAA8tJQejZVxYR69ksVplv5EVzuCziPysCvohxY5X/i3ujuqjUGDIxDZXWsVYzV7rUT/AV6u4h/xGWFlAAAAAElFTkSuQmCC" />
+
+                    </div>
+                    <div class="price">
+                        <p class="amt">$79</p>
+                        <div class="chart">
+                            <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAf9JREFUSEvN1jvozXEYx/HXXwaXSIlkIhlksUhkYZBBBpeFTbmWwaAYRMplMEj/EikTE6NJGEQpBiUMLuUSxSAyuISef99f/fo5/3O+33NxPHWG8zvP93l/n89z+Z0RQ7KRIXH9F+B5iE/YFzwYpBr1jI/gcA32DGvxfBAXaAcO3kMsGTS4LvUG7E3AlbjTb/h4zTUT7zERl7H1X4GDcwlb8B3r8a1H+Cu8qGK0G6eQ+HaPsObxTbgaDzvN8SMs7iN8Gy7mgHfgXAIfx/UuLnEMK/ATs/ApBzwF7zA9QdcUgqfiIybhCjbn1LjyOZNG6zcWFi6UumLrcK0EvACxxcJOY19B1nexHB8wB79KwOF7A6vxGbMzR2t+bXxOYX/9wp26uvLdmGoU37fjQkbW0YwHk98iPO0GPAFvk1yPM0YsEnqDubiPpc2L5mYc5w7haAoQ8/iyTdYx+6Pp9z042ws4muN12t8ZSo+5/Eg9MTa73UhdnTmfapwLjuWzq5VzidRxPmod9ZqcQf6a6hvz/5eVgiNALIUZqW7xF6lp07A7rcZQqKWVgk/gQIp0K812M/BNrEoPT9ZGqqca14OGhCF902I7VQmNd7mOr8Vm0PruDRl3tgBHQ4VfWPzeUu5SqSNYbKF4W91r02DL0np90q8aZzRznks3GedF7uA1NPAf35lTH+7QWpkAAAAASUVORK5CYII=" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="product-1" id="image-1">
+
+                <div class="img"><img src="/img/products/f2.jpg" id="image-1" alt=""></div>
+                <div class="details">
+                    <p>adidas</p>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="ratings">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAq5JREFUSEvFlstrFEEQh3/VvUsk2engTBLDJjkq5ubJW3yhYEAQwQRPggsieDN68T8QNOpNEE3Qg+ADD+LjkoP4OHgTvBjJReIa3HVWdiauxExPyaxJ3Gx2NjPjhvSlmZqq+qq6u7qLsEmDNomLxOBSWQ4HQZud+kWS4BOBS05qiMGvAiCBhkzlvYkLTwS2HfkcQDVjAM8spY9sOLjoYIeAnK4BsQ892K1QK1s3jtgZlxx5h4GTdZ4nLaVz69JqFGKBiz+RFVp+BpCqg3iLpPt6DRSiwmOBbSd1BeDzjZwz6FKX8i62HFwswhBtMg/ACHHuVgy9bYDwKwp8VcY/5tO7mP2dzNwHiCyCmZAF0M9AloC2Zk4ZWCDgK4BZMOZAlAf8fDALEtNbM4vvl+1XwLYrR8G4HyXaxDqEEcvQj/7W/9Kwy6nDIE50C0UMhAm011Te61Xg4KPkyhPMuFcbUESnTdWCLRDAcVPpp2uWelmwAXCXQMOm8t7WRtewnFoIt0nI/Wbm94f6JQmt4/+GM2Y19IGeTsw02oemF0hSOAEzWuo93R2YC9v8pmBmpEqudAFsiXfI6JqlvLFmNk3B38vp3UT+u3jQarF8tJQ3mBhsO2IMoPH44OAZ0QNWO74kWmrbkY8BHEsCJuKzpuHfSAr+BqAnxHh+SZ4JObVPTKWPxgYXytguSX4KcfqSU7raDJAn7zKwb40eoWJmtEmEhVjlZDsy6Chu1xm5RLhgGvpmrbzkijPMdLn+yWRBh7oy3lRc8ASAUytGjCmkdc5qx2wjR3YFA1iUEyAc/PefrlrKa9g4hJaT7cgHAEYAlAGcs5SejHLIbEcGwV4HoAA8tJQejZVxYR69ksVplv5EVzuCziPysCvohxY5X/i3ujuqjUGDIxDZXWsVYzV7rUT/AV6u4h/xGWFlAAAAAElFTkSuQmCC" />
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAq5JREFUSEvFlstrFEEQh3/VvUsk2engTBLDJjkq5ubJW3yhYEAQwQRPggsieDN68T8QNOpNEE3Qg+ADD+LjkoP4OHgTvBjJReIa3HVWdiauxExPyaxJ3Gx2NjPjhvSlmZqq+qq6u7qLsEmDNomLxOBSWQ4HQZud+kWS4BOBS05qiMGvAiCBhkzlvYkLTwS2HfkcQDVjAM8spY9sOLjoYIeAnK4BsQ892K1QK1s3jtgZlxx5h4GTdZ4nLaVz69JqFGKBiz+RFVp+BpCqg3iLpPt6DRSiwmOBbSd1BeDzjZwz6FKX8i62HFwswhBtMg/ACHHuVgy9bYDwKwp8VcY/5tO7mP2dzNwHiCyCmZAF0M9AloC2Zk4ZWCDgK4BZMOZAlAf8fDALEtNbM4vvl+1XwLYrR8G4HyXaxDqEEcvQj/7W/9Kwy6nDIE50C0UMhAm011Te61Xg4KPkyhPMuFcbUESnTdWCLRDAcVPpp2uWelmwAXCXQMOm8t7WRtewnFoIt0nI/Wbm94f6JQmt4/+GM2Y19IGeTsw02oemF0hSOAEzWuo93R2YC9v8pmBmpEqudAFsiXfI6JqlvLFmNk3B38vp3UT+u3jQarF8tJQ3mBhsO2IMoPH44OAZ0QNWO74kWmrbkY8BHEsCJuKzpuHfSAr+BqAnxHh+SZ4JObVPTKWPxgYXytguSX4KcfqSU7raDJAn7zKwb40eoWJmtEmEhVjlZDsy6Chu1xm5RLhgGvpmrbzkijPMdLn+yWRBh7oy3lRc8ASAUytGjCmkdc5qx2wjR3YFA1iUEyAc/PefrlrKa9g4hJaT7cgHAEYAlAGcs5SejHLIbEcGwV4HoAA8tJQejZVxYR69ksVplv5EVzuCziPysCvohxY5X/i3ujuqjUGDIxDZXWsVYzV7rUT/AV6u4h/xGWFlAAAAAElFTkSuQmCC" />
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAq5JREFUSEvFlstrFEEQh3/VvUsk2engTBLDJjkq5ubJW3yhYEAQwQRPggsieDN68T8QNOpNEE3Qg+ADD+LjkoP4OHgTvBjJReIa3HVWdiauxExPyaxJ3Gx2NjPjhvSlmZqq+qq6u7qLsEmDNomLxOBSWQ4HQZud+kWS4BOBS05qiMGvAiCBhkzlvYkLTwS2HfkcQDVjAM8spY9sOLjoYIeAnK4BsQ892K1QK1s3jtgZlxx5h4GTdZ4nLaVz69JqFGKBiz+RFVp+BpCqg3iLpPt6DRSiwmOBbSd1BeDzjZwz6FKX8i62HFwswhBtMg/ACHHuVgy9bYDwKwp8VcY/5tO7mP2dzNwHiCyCmZAF0M9AloC2Zk4ZWCDgK4BZMOZAlAf8fDALEtNbM4vvl+1XwLYrR8G4HyXaxDqEEcvQj/7W/9Kwy6nDIE50C0UMhAm011Te61Xg4KPkyhPMuFcbUESnTdWCLRDAcVPpp2uWelmwAXCXQMOm8t7WRtewnFoIt0nI/Wbm94f6JQmt4/+GM2Y19IGeTsw02oemF0hSOAEzWuo93R2YC9v8pmBmpEqudAFsiXfI6JqlvLFmNk3B38vp3UT+u3jQarF8tJQ3mBhsO2IMoPH44OAZ0QNWO74kWmrbkY8BHEsCJuKzpuHfSAr+BqAnxHh+SZ4JObVPTKWPxgYXytguSX4KcfqSU7raDJAn7zKwb40eoWJmtEmEhVjlZDsy6Chu1xm5RLhgGvpmrbzkijPMdLn+yWRBh7oy3lRc8ASAUytGjCmkdc5qx2wjR3YFA1iUEyAc/PefrlrKa9g4hJaT7cgHAEYAlAGcs5SejHLIbEcGwV4HoAA8tJQejZVxYR69ksVplv5EVzuCziPysCvohxY5X/i3ujuqjUGDIxDZXWsVYzV7rUT/AV6u4h/xGWFlAAAAAElFTkSuQmCC" />
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAq5JREFUSEvFlstrFEEQh3/VvUsk2engTBLDJjkq5ubJW3yhYEAQwQRPggsieDN68T8QNOpNEE3Qg+ADD+LjkoP4OHgTvBjJReIa3HVWdiauxExPyaxJ3Gx2NjPjhvSlmZqq+qq6u7qLsEmDNomLxOBSWQ4HQZud+kWS4BOBS05qiMGvAiCBhkzlvYkLTwS2HfkcQDVjAM8spY9sOLjoYIeAnK4BsQ892K1QK1s3jtgZlxx5h4GTdZ4nLaVz69JqFGKBiz+RFVp+BpCqg3iLpPt6DRSiwmOBbSd1BeDzjZwz6FKX8i62HFwswhBtMg/ACHHuVgy9bYDwKwp8VcY/5tO7mP2dzNwHiCyCmZAF0M9AloC2Zk4ZWCDgK4BZMOZAlAf8fDALEtNbM4vvl+1XwLYrR8G4HyXaxDqEEcvQj/7W/9Kwy6nDIE50C0UMhAm011Te61Xg4KPkyhPMuFcbUESnTdWCLRDAcVPpp2uWelmwAXCXQMOm8t7WRtewnFoIt0nI/Wbm94f6JQmt4/+GM2Y19IGeTsw02oemF0hSOAEzWuo93R2YC9v8pmBmpEqudAFsiXfI6JqlvLFmNk3B38vp3UT+u3jQarF8tJQ3mBhsO2IMoPH44OAZ0QNWO74kWmrbkY8BHEsCJuKzpuHfSAr+BqAnxHh+SZ4JObVPTKWPxgYXytguSX4KcfqSU7raDJAn7zKwb40eoWJmtEmEhVjlZDsy6Chu1xm5RLhgGvpmrbzkijPMdLn+yWRBh7oy3lRc8ASAUytGjCmkdc5qx2wjR3YFA1iUEyAc/PefrlrKa9g4hJaT7cgHAEYAlAGcs5SejHLIbEcGwV4HoAA8tJQejZVxYR69ksVplv5EVzuCziPysCvohxY5X/i3ujuqjUGDIxDZXWsVYzV7rUT/AV6u4h/xGWFlAAAAAElFTkSuQmCC" />
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAq5JREFUSEvFlstrFEEQh3/VvUsk2engTBLDJjkq5ubJW3yhYEAQwQRPggsieDN68T8QNOpNEE3Qg+ADD+LjkoP4OHgTvBjJReIa3HVWdiauxExPyaxJ3Gx2NjPjhvSlmZqq+qq6u7qLsEmDNomLxOBSWQ4HQZud+kWS4BOBS05qiMGvAiCBhkzlvYkLTwS2HfkcQDVjAM8spY9sOLjoYIeAnK4BsQ892K1QK1s3jtgZlxx5h4GTdZ4nLaVz69JqFGKBiz+RFVp+BpCqg3iLpPt6DRSiwmOBbSd1BeDzjZwz6FKX8i62HFwswhBtMg/ACHHuVgy9bYDwKwp8VcY/5tO7mP2dzNwHiCyCmZAF0M9AloC2Zk4ZWCDgK4BZMOZAlAf8fDALEtNbM4vvl+1XwLYrR8G4HyXaxDqEEcvQj/7W/9Kwy6nDIE50C0UMhAm011Te61Xg4KPkyhPMuFcbUESnTdWCLRDAcVPpp2uWelmwAXCXQMOm8t7WRtewnFoIt0nI/Wbm94f6JQmt4/+GM2Y19IGeTsw02oemF0hSOAEzWuo93R2YC9v8pmBmpEqudAFsiXfI6JqlvLFmNk3B38vp3UT+u3jQarF8tJQ3mBhsO2IMoPH44OAZ0QNWO74kWmrbkY8BHEsCJuKzpuHfSAr+BqAnxHh+SZ4JObVPTKWPxgYXytguSX4KcfqSU7raDJAn7zKwb40eoWJmtEmEhVjlZDsy6Chu1xm5RLhgGvpmrbzkijPMdLn+yWRBh7oy3lRc8ASAUytGjCmkdc5qx2wjR3YFA1iUEyAc/PefrlrKa9g4hJaT7cgHAEYAlAGcs5SejHLIbEcGwV4HoAA8tJQejZVxYR69ksVplv5EVzuCziPysCvohxY5X/i3ujuqjUGDIxDZXWsVYzV7rUT/AV6u4h/xGWFlAAAAAElFTkSuQmCC" />
+
+                    </div>
+                    <div class="price">
+                        <p class="amt">$79</p>
+                        <div class="chart">
+                            <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAf9JREFUSEvN1jvozXEYx/HXXwaXSIlkIhlksUhkYZBBBpeFTbmWwaAYRMplMEj/EikTE6NJGEQpBiUMLuUSxSAyuISef99f/fo5/3O+33NxPHWG8zvP93l/n89z+Z0RQ7KRIXH9F+B5iE/YFzwYpBr1jI/gcA32DGvxfBAXaAcO3kMsGTS4LvUG7E3AlbjTb/h4zTUT7zERl7H1X4GDcwlb8B3r8a1H+Cu8qGK0G6eQ+HaPsObxTbgaDzvN8SMs7iN8Gy7mgHfgXAIfx/UuLnEMK/ATs/ApBzwF7zA9QdcUgqfiIybhCjbn1LjyOZNG6zcWFi6UumLrcK0EvACxxcJOY19B1nexHB8wB79KwOF7A6vxGbMzR2t+bXxOYX/9wp26uvLdmGoU37fjQkbW0YwHk98iPO0GPAFvk1yPM0YsEnqDubiPpc2L5mYc5w7haAoQ8/iyTdYx+6Pp9z042ws4muN12t8ZSo+5/Eg9MTa73UhdnTmfapwLjuWzq5VzidRxPmod9ZqcQf6a6hvz/5eVgiNALIUZqW7xF6lp07A7rcZQqKWVgk/gQIp0K812M/BNrEoPT9ZGqqca14OGhCF902I7VQmNd7mOr8Vm0PruDRl3tgBHQ4VfWPzeUu5SqSNYbKF4W91r02DL0np90q8aZzRznks3GedF7uA1NPAf35lTH+7QWpkAAAAASUVORK5CYII=" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-1" id="image-1">
+                <img src="/img/products/f3.jpg" id="image-1" alt="">
+                <div class="details">
+                    <p>adidas</p>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="ratings">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAq5JREFUSEvFlstrFEEQh3/VvUsk2engTBLDJjkq5ubJW3yhYEAQwQRPggsieDN68T8QNOpNEE3Qg+ADD+LjkoP4OHgTvBjJReIa3HVWdiauxExPyaxJ3Gx2NjPjhvSlmZqq+qq6u7qLsEmDNomLxOBSWQ4HQZud+kWS4BOBS05qiMGvAiCBhkzlvYkLTwS2HfkcQDVjAM8spY9sOLjoYIeAnK4BsQ892K1QK1s3jtgZlxx5h4GTdZ4nLaVz69JqFGKBiz+RFVp+BpCqg3iLpPt6DRSiwmOBbSd1BeDzjZwz6FKX8i62HFwswhBtMg/ACHHuVgy9bYDwKwp8VcY/5tO7mP2dzNwHiCyCmZAF0M9AloC2Zk4ZWCDgK4BZMOZAlAf8fDALEtNbM4vvl+1XwLYrR8G4HyXaxDqEEcvQj/7W/9Kwy6nDIE50C0UMhAm011Te61Xg4KPkyhPMuFcbUESnTdWCLRDAcVPpp2uWelmwAXCXQMOm8t7WRtewnFoIt0nI/Wbm94f6JQmt4/+GM2Y19IGeTsw02oemF0hSOAEzWuo93R2YC9v8pmBmpEqudAFsiXfI6JqlvLFmNk3B38vp3UT+u3jQarF8tJQ3mBhsO2IMoPH44OAZ0QNWO74kWmrbkY8BHEsCJuKzpuHfSAr+BqAnxHh+SZ4JObVPTKWPxgYXytguSX4KcfqSU7raDJAn7zKwb40eoWJmtEmEhVjlZDsy6Chu1xm5RLhgGvpmrbzkijPMdLn+yWRBh7oy3lRc8ASAUytGjCmkdc5qx2wjR3YFA1iUEyAc/PefrlrKa9g4hJaT7cgHAEYAlAGcs5SejHLIbEcGwV4HoAA8tJQejZVxYR69ksVplv5EVzuCziPysCvohxY5X/i3ujuqjUGDIxDZXWsVYzV7rUT/AV6u4h/xGWFlAAAAAElFTkSuQmCC" />
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAq5JREFUSEvFlstrFEEQh3/VvUsk2engTBLDJjkq5ubJW3yhYEAQwQRPggsieDN68T8QNOpNEE3Qg+ADD+LjkoP4OHgTvBjJReIa3HVWdiauxExPyaxJ3Gx2NjPjhvSlmZqq+qq6u7qLsEmDNomLxOBSWQ4HQZud+kWS4BOBS05qiMGvAiCBhkzlvYkLTwS2HfkcQDVjAM8spY9sOLjoYIeAnK4BsQ892K1QK1s3jtgZlxx5h4GTdZ4nLaVz69JqFGKBiz+RFVp+BpCqg3iLpPt6DRSiwmOBbSd1BeDzjZwz6FKX8i62HFwswhBtMg/ACHHuVgy9bYDwKwp8VcY/5tO7mP2dzNwHiCyCmZAF0M9AloC2Zk4ZWCDgK4BZMOZAlAf8fDALEtNbM4vvl+1XwLYrR8G4HyXaxDqEEcvQj/7W/9Kwy6nDIE50C0UMhAm011Te61Xg4KPkyhPMuFcbUESnTdWCLRDAcVPpp2uWelmwAXCXQMOm8t7WRtewnFoIt0nI/Wbm94f6JQmt4/+GM2Y19IGeTsw02oemF0hSOAEzWuo93R2YC9v8pmBmpEqudAFsiXfI6JqlvLFmNk3B38vp3UT+u3jQarF8tJQ3mBhsO2IMoPH44OAZ0QNWO74kWmrbkY8BHEsCJuKzpuHfSAr+BqAnxHh+SZ4JObVPTKWPxgYXytguSX4KcfqSU7raDJAn7zKwb40eoWJmtEmEhVjlZDsy6Chu1xm5RLhgGvpmrbzkijPMdLn+yWRBh7oy3lRc8ASAUytGjCmkdc5qx2wjR3YFA1iUEyAc/PefrlrKa9g4hJaT7cgHAEYAlAGcs5SejHLIbEcGwV4HoAA8tJQejZVxYR69ksVplv5EVzuCziPysCvohxY5X/i3ujuqjUGDIxDZXWsVYzV7rUT/AV6u4h/xGWFlAAAAAElFTkSuQmCC" />
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAq5JREFUSEvFlstrFEEQh3/VvUsk2engTBLDJjkq5ubJW3yhYEAQwQRPggsieDN68T8QNOpNEE3Qg+ADD+LjkoP4OHgTvBjJReIa3HVWdiauxExPyaxJ3Gx2NjPjhvSlmZqq+qq6u7qLsEmDNomLxOBSWQ4HQZud+kWS4BOBS05qiMGvAiCBhkzlvYkLTwS2HfkcQDVjAM8spY9sOLjoYIeAnK4BsQ892K1QK1s3jtgZlxx5h4GTdZ4nLaVz69JqFGKBiz+RFVp+BpCqg3iLpPt6DRSiwmOBbSd1BeDzjZwz6FKX8i62HFwswhBtMg/ACHHuVgy9bYDwKwp8VcY/5tO7mP2dzNwHiCyCmZAF0M9AloC2Zk4ZWCDgK4BZMOZAlAf8fDALEtNbM4vvl+1XwLYrR8G4HyXaxDqEEcvQj/7W/9Kwy6nDIE50C0UMhAm011Te61Xg4KPkyhPMuFcbUESnTdWCLRDAcVPpp2uWelmwAXCXQMOm8t7WRtewnFoIt0nI/Wbm94f6JQmt4/+GM2Y19IGeTsw02oemF0hSOAEzWuo93R2YC9v8pmBmpEqudAFsiXfI6JqlvLFmNk3B38vp3UT+u3jQarF8tJQ3mBhsO2IMoPH44OAZ0QNWO74kWmrbkY8BHEsCJuKzpuHfSAr+BqAnxHh+SZ4JObVPTKWPxgYXytguSX4KcfqSU7raDJAn7zKwb40eoWJmtEmEhVjlZDsy6Chu1xm5RLhgGvpmrbzkijPMdLn+yWRBh7oy3lRc8ASAUytGjCmkdc5qx2wjR3YFA1iUEyAc/PefrlrKa9g4hJaT7cgHAEYAlAGcs5SejHLIbEcGwV4HoAA8tJQejZVxYR69ksVplv5EVzuCziPysCvohxY5X/i3ujuqjUGDIxDZXWsVYzV7rUT/AV6u4h/xGWFlAAAAAElFTkSuQmCC" />
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAq5JREFUSEvFlstrFEEQh3/VvUsk2engTBLDJjkq5ubJW3yhYEAQwQRPggsieDN68T8QNOpNEE3Qg+ADD+LjkoP4OHgTvBjJReIa3HVWdiauxExPyaxJ3Gx2NjPjhvSlmZqq+qq6u7qLsEmDNomLxOBSWQ4HQZud+kWS4BOBS05qiMGvAiCBhkzlvYkLTwS2HfkcQDVjAM8spY9sOLjoYIeAnK4BsQ892K1QK1s3jtgZlxx5h4GTdZ4nLaVz69JqFGKBiz+RFVp+BpCqg3iLpPt6DRSiwmOBbSd1BeDzjZwz6FKX8i62HFwswhBtMg/ACHHuVgy9bYDwKwp8VcY/5tO7mP2dzNwHiCyCmZAF0M9AloC2Zk4ZWCDgK4BZMOZAlAf8fDALEtNbM4vvl+1XwLYrR8G4HyXaxDqEEcvQj/7W/9Kwy6nDIE50C0UMhAm011Te61Xg4KPkyhPMuFcbUESnTdWCLRDAcVPpp2uWelmwAXCXQMOm8t7WRtewnFoIt0nI/Wbm94f6JQmt4/+GM2Y19IGeTsw02oemF0hSOAEzWuo93R2YC9v8pmBmpEqudAFsiXfI6JqlvLFmNk3B38vp3UT+u3jQarF8tJQ3mBhsO2IMoPH44OAZ0QNWO74kWmrbkY8BHEsCJuKzpuHfSAr+BqAnxHh+SZ4JObVPTKWPxgYXytguSX4KcfqSU7raDJAn7zKwb40eoWJmtEmEhVjlZDsy6Chu1xm5RLhgGvpmrbzkijPMdLn+yWRBh7oy3lRc8ASAUytGjCmkdc5qx2wjR3YFA1iUEyAc/PefrlrKa9g4hJaT7cgHAEYAlAGcs5SejHLIbEcGwV4HoAA8tJQejZVxYR69ksVplv5EVzuCziPysCvohxY5X/i3ujuqjUGDIxDZXWsVYzV7rUT/AV6u4h/xGWFlAAAAAElFTkSuQmCC" />
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAq5JREFUSEvFlstrFEEQh3/VvUsk2engTBLDJjkq5ubJW3yhYEAQwQRPggsieDN68T8QNOpNEE3Qg+ADD+LjkoP4OHgTvBjJReIa3HVWdiauxExPyaxJ3Gx2NjPjhvSlmZqq+qq6u7qLsEmDNomLxOBSWQ4HQZud+kWS4BOBS05qiMGvAiCBhkzlvYkLTwS2HfkcQDVjAM8spY9sOLjoYIeAnK4BsQ892K1QK1s3jtgZlxx5h4GTdZ4nLaVz69JqFGKBiz+RFVp+BpCqg3iLpPt6DRSiwmOBbSd1BeDzjZwz6FKX8i62HFwswhBtMg/ACHHuVgy9bYDwKwp8VcY/5tO7mP2dzNwHiCyCmZAF0M9AloC2Zk4ZWCDgK4BZMOZAlAf8fDALEtNbM4vvl+1XwLYrR8G4HyXaxDqEEcvQj/7W/9Kwy6nDIE50C0UMhAm011Te61Xg4KPkyhPMuFcbUESnTdWCLRDAcVPpp2uWelmwAXCXQMOm8t7WRtewnFoIt0nI/Wbm94f6JQmt4/+GM2Y19IGeTsw02oemF0hSOAEzWuo93R2YC9v8pmBmpEqudAFsiXfI6JqlvLFmNk3B38vp3UT+u3jQarF8tJQ3mBhsO2IMoPH44OAZ0QNWO74kWmrbkY8BHEsCJuKzpuHfSAr+BqAnxHh+SZ4JObVPTKWPxgYXytguSX4KcfqSU7raDJAn7zKwb40eoWJmtEmEhVjlZDsy6Chu1xm5RLhgGvpmrbzkijPMdLn+yWRBh7oy3lRc8ASAUytGjCmkdc5qx2wjR3YFA1iUEyAc/PefrlrKa9g4hJaT7cgHAEYAlAGcs5SejHLIbEcGwV4HoAA8tJQejZVxYR69ksVplv5EVzuCziPysCvohxY5X/i3ujuqjUGDIxDZXWsVYzV7rUT/AV6u4h/xGWFlAAAAAElFTkSuQmCC" />
+
+                    </div>
+                    <div class="price">
+                        <p class="amt">$79</p>
+                        <div class="chart">
+                            <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAf9JREFUSEvN1jvozXEYx/HXXwaXSIlkIhlksUhkYZBBBpeFTbmWwaAYRMplMEj/EikTE6NJGEQpBiUMLuUSxSAyuISef99f/fo5/3O+33NxPHWG8zvP93l/n89z+Z0RQ7KRIXH9F+B5iE/YFzwYpBr1jI/gcA32DGvxfBAXaAcO3kMsGTS4LvUG7E3AlbjTb/h4zTUT7zERl7H1X4GDcwlb8B3r8a1H+Cu8qGK0G6eQ+HaPsObxTbgaDzvN8SMs7iN8Gy7mgHfgXAIfx/UuLnEMK/ATs/ApBzwF7zA9QdcUgqfiIybhCjbn1LjyOZNG6zcWFi6UumLrcK0EvACxxcJOY19B1nexHB8wB79KwOF7A6vxGbMzR2t+bXxOYX/9wp26uvLdmGoU37fjQkbW0YwHk98iPO0GPAFvk1yPM0YsEnqDubiPpc2L5mYc5w7haAoQ8/iyTdYx+6Pp9z042ws4muN12t8ZSo+5/Eg9MTa73UhdnTmfapwLjuWzq5VzidRxPmod9ZqcQf6a6hvz/5eVgiNALIUZqW7xF6lp07A7rcZQqKWVgk/gQIp0K812M/BNrEoPT9ZGqqca14OGhCF902I7VQmNd7mOr8Vm0PruDRl3tgBHQ4VfWPzeUu5SqSNYbKF4W91r02DL0np90q8aZzRznks3GedF7uA1NPAf35lTH+7QWpkAAAAASUVORK5CYII=" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-1" id="image-1">
+                <img src="/img/products/f4.jpg" id="image-1" alt="">
+                <div class="details">
+                    <p>adidas</p>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="ratings">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAq5JREFUSEvFlstrFEEQh3/VvUsk2engTBLDJjkq5ubJW3yhYEAQwQRPggsieDN68T8QNOpNEE3Qg+ADD+LjkoP4OHgTvBjJReIa3HVWdiauxExPyaxJ3Gx2NjPjhvSlmZqq+qq6u7qLsEmDNomLxOBSWQ4HQZud+kWS4BOBS05qiMGvAiCBhkzlvYkLTwS2HfkcQDVjAM8spY9sOLjoYIeAnK4BsQ892K1QK1s3jtgZlxx5h4GTdZ4nLaVz69JqFGKBiz+RFVp+BpCqg3iLpPt6DRSiwmOBbSd1BeDzjZwz6FKX8i62HFwswhBtMg/ACHHuVgy9bYDwKwp8VcY/5tO7mP2dzNwHiCyCmZAF0M9AloC2Zk4ZWCDgK4BZMOZAlAf8fDALEtNbM4vvl+1XwLYrR8G4HyXaxDqEEcvQj/7W/9Kwy6nDIE50C0UMhAm011Te61Xg4KPkyhPMuFcbUESnTdWCLRDAcVPpp2uWelmwAXCXQMOm8t7WRtewnFoIt0nI/Wbm94f6JQmt4/+GM2Y19IGeTsw02oemF0hSOAEzWuo93R2YC9v8pmBmpEqudAFsiXfI6JqlvLFmNk3B38vp3UT+u3jQarF8tJQ3mBhsO2IMoPH44OAZ0QNWO74kWmrbkY8BHEsCJuKzpuHfSAr+BqAnxHh+SZ4JObVPTKWPxgYXytguSX4KcfqSU7raDJAn7zKwb40eoWJmtEmEhVjlZDsy6Chu1xm5RLhgGvpmrbzkijPMdLn+yWRBh7oy3lRc8ASAUytGjCmkdc5qx2wjR3YFA1iUEyAc/PefrlrKa9g4hJaT7cgHAEYAlAGcs5SejHLIbEcGwV4HoAA8tJQejZVxYR69ksVplv5EVzuCziPysCvohxY5X/i3ujuqjUGDIxDZXWsVYzV7rUT/AV6u4h/xGWFlAAAAAElFTkSuQmCC" />
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAq5JREFUSEvFlstrFEEQh3/VvUsk2engTBLDJjkq5ubJW3yhYEAQwQRPggsieDN68T8QNOpNEE3Qg+ADD+LjkoP4OHgTvBjJReIa3HVWdiauxExPyaxJ3Gx2NjPjhvSlmZqq+qq6u7qLsEmDNomLxOBSWQ4HQZud+kWS4BOBS05qiMGvAiCBhkzlvYkLTwS2HfkcQDVjAM8spY9sOLjoYIeAnK4BsQ892K1QK1s3jtgZlxx5h4GTdZ4nLaVz69JqFGKBiz+RFVp+BpCqg3iLpPt6DRSiwmOBbSd1BeDzjZwz6FKX8i62HFwswhBtMg/ACHHuVgy9bYDwKwp8VcY/5tO7mP2dzNwHiCyCmZAF0M9AloC2Zk4ZWCDgK4BZMOZAlAf8fDALEtNbM4vvl+1XwLYrR8G4HyXaxDqEEcvQj/7W/9Kwy6nDIE50C0UMhAm011Te61Xg4KPkyhPMuFcbUESnTdWCLRDAcVPpp2uWelmwAXCXQMOm8t7WRtewnFoIt0nI/Wbm94f6JQmt4/+GM2Y19IGeTsw02oemF0hSOAEzWuo93R2YC9v8pmBmpEqudAFsiXfI6JqlvLFmNk3B38vp3UT+u3jQarF8tJQ3mBhsO2IMoPH44OAZ0QNWO74kWmrbkY8BHEsCJuKzpuHfSAr+BqAnxHh+SZ4JObVPTKWPxgYXytguSX4KcfqSU7raDJAn7zKwb40eoWJmtEmEhVjlZDsy6Chu1xm5RLhgGvpmrbzkijPMdLn+yWRBh7oy3lRc8ASAUytGjCmkdc5qx2wjR3YFA1iUEyAc/PefrlrKa9g4hJaT7cgHAEYAlAGcs5SejHLIbEcGwV4HoAA8tJQejZVxYR69ksVplv5EVzuCziPysCvohxY5X/i3ujuqjUGDIxDZXWsVYzV7rUT/AV6u4h/xGWFlAAAAAElFTkSuQmCC" />
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAq5JREFUSEvFlstrFEEQh3/VvUsk2engTBLDJjkq5ubJW3yhYEAQwQRPggsieDN68T8QNOpNEE3Qg+ADD+LjkoP4OHgTvBjJReIa3HVWdiauxExPyaxJ3Gx2NjPjhvSlmZqq+qq6u7qLsEmDNomLxOBSWQ4HQZud+kWS4BOBS05qiMGvAiCBhkzlvYkLTwS2HfkcQDVjAM8spY9sOLjoYIeAnK4BsQ892K1QK1s3jtgZlxx5h4GTdZ4nLaVz69JqFGKBiz+RFVp+BpCqg3iLpPt6DRSiwmOBbSd1BeDzjZwz6FKX8i62HFwswhBtMg/ACHHuVgy9bYDwKwp8VcY/5tO7mP2dzNwHiCyCmZAF0M9AloC2Zk4ZWCDgK4BZMOZAlAf8fDALEtNbM4vvl+1XwLYrR8G4HyXaxDqEEcvQj/7W/9Kwy6nDIE50C0UMhAm011Te61Xg4KPkyhPMuFcbUESnTdWCLRDAcVPpp2uWelmwAXCXQMOm8t7WRtewnFoIt0nI/Wbm94f6JQmt4/+GM2Y19IGeTsw02oemF0hSOAEzWuo93R2YC9v8pmBmpEqudAFsiXfI6JqlvLFmNk3B38vp3UT+u3jQarF8tJQ3mBhsO2IMoPH44OAZ0QNWO74kWmrbkY8BHEsCJuKzpuHfSAr+BqAnxHh+SZ4JObVPTKWPxgYXytguSX4KcfqSU7raDJAn7zKwb40eoWJmtEmEhVjlZDsy6Chu1xm5RLhgGvpmrbzkijPMdLn+yWRBh7oy3lRc8ASAUytGjCmkdc5qx2wjR3YFA1iUEyAc/PefrlrKa9g4hJaT7cgHAEYAlAGcs5SejHLIbEcGwV4HoAA8tJQejZVxYR69ksVplv5EVzuCziPysCvohxY5X/i3ujuqjUGDIxDZXWsVYzV7rUT/AV6u4h/xGWFlAAAAAElFTkSuQmCC" />
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAq5JREFUSEvFlstrFEEQh3/VvUsk2engTBLDJjkq5ubJW3yhYEAQwQRPggsieDN68T8QNOpNEE3Qg+ADD+LjkoP4OHgTvBjJReIa3HVWdiauxExPyaxJ3Gx2NjPjhvSlmZqq+qq6u7qLsEmDNomLxOBSWQ4HQZud+kWS4BOBS05qiMGvAiCBhkzlvYkLTwS2HfkcQDVjAM8spY9sOLjoYIeAnK4BsQ892K1QK1s3jtgZlxx5h4GTdZ4nLaVz69JqFGKBiz+RFVp+BpCqg3iLpPt6DRSiwmOBbSd1BeDzjZwz6FKX8i62HFwswhBtMg/ACHHuVgy9bYDwKwp8VcY/5tO7mP2dzNwHiCyCmZAF0M9AloC2Zk4ZWCDgK4BZMOZAlAf8fDALEtNbM4vvl+1XwLYrR8G4HyXaxDqEEcvQj/7W/9Kwy6nDIE50C0UMhAm011Te61Xg4KPkyhPMuFcbUESnTdWCLRDAcVPpp2uWelmwAXCXQMOm8t7WRtewnFoIt0nI/Wbm94f6JQmt4/+GM2Y19IGeTsw02oemF0hSOAEzWuo93R2YC9v8pmBmpEqudAFsiXfI6JqlvLFmNk3B38vp3UT+u3jQarF8tJQ3mBhsO2IMoPH44OAZ0QNWO74kWmrbkY8BHEsCJuKzpuHfSAr+BqAnxHh+SZ4JObVPTKWPxgYXytguSX4KcfqSU7raDJAn7zKwb40eoWJmtEmEhVjlZDsy6Chu1xm5RLhgGvpmrbzkijPMdLn+yWRBh7oy3lRc8ASAUytGjCmkdc5qx2wjR3YFA1iUEyAc/PefrlrKa9g4hJaT7cgHAEYAlAGcs5SejHLIbEcGwV4HoAA8tJQejZVxYR69ksVplv5EVzuCziPysCvohxY5X/i3ujuqjUGDIxDZXWsVYzV7rUT/AV6u4h/xGWFlAAAAAElFTkSuQmCC" />
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAq5JREFUSEvFlstrFEEQh3/VvUsk2engTBLDJjkq5ubJW3yhYEAQwQRPggsieDN68T8QNOpNEE3Qg+ADD+LjkoP4OHgTvBjJReIa3HVWdiauxExPyaxJ3Gx2NjPjhvSlmZqq+qq6u7qLsEmDNomLxOBSWQ4HQZud+kWS4BOBS05qiMGvAiCBhkzlvYkLTwS2HfkcQDVjAM8spY9sOLjoYIeAnK4BsQ892K1QK1s3jtgZlxx5h4GTdZ4nLaVz69JqFGKBiz+RFVp+BpCqg3iLpPt6DRSiwmOBbSd1BeDzjZwz6FKX8i62HFwswhBtMg/ACHHuVgy9bYDwKwp8VcY/5tO7mP2dzNwHiCyCmZAF0M9AloC2Zk4ZWCDgK4BZMOZAlAf8fDALEtNbM4vvl+1XwLYrR8G4HyXaxDqEEcvQj/7W/9Kwy6nDIE50C0UMhAm011Te61Xg4KPkyhPMuFcbUESnTdWCLRDAcVPpp2uWelmwAXCXQMOm8t7WRtewnFoIt0nI/Wbm94f6JQmt4/+GM2Y19IGeTsw02oemF0hSOAEzWuo93R2YC9v8pmBmpEqudAFsiXfI6JqlvLFmNk3B38vp3UT+u3jQarF8tJQ3mBhsO2IMoPH44OAZ0QNWO74kWmrbkY8BHEsCJuKzpuHfSAr+BqAnxHh+SZ4JObVPTKWPxgYXytguSX4KcfqSU7raDJAn7zKwb40eoWJmtEmEhVjlZDsy6Chu1xm5RLhgGvpmrbzkijPMdLn+yWRBh7oy3lRc8ASAUytGjCmkdc5qx2wjR3YFA1iUEyAc/PefrlrKa9g4hJaT7cgHAEYAlAGcs5SejHLIbEcGwV4HoAA8tJQejZVxYR69ksVplv5EVzuCziPysCvohxY5X/i3ujuqjUGDIxDZXWsVYzV7rUT/AV6u4h/xGWFlAAAAAElFTkSuQmCC" />
+
+                    </div>
+                    <div class="price">
+                        <p class="amt">$79</p>
+                        <div class="chart">
+                            <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAf9JREFUSEvN1jvozXEYx/HXXwaXSIlkIhlksUhkYZBBBpeFTbmWwaAYRMplMEj/EikTE6NJGEQpBiUMLuUSxSAyuISef99f/fo5/3O+33NxPHWG8zvP93l/n89z+Z0RQ7KRIXH9F+B5iE/YFzwYpBr1jI/gcA32DGvxfBAXaAcO3kMsGTS4LvUG7E3AlbjTb/h4zTUT7zERl7H1X4GDcwlb8B3r8a1H+Cu8qGK0G6eQ+HaPsObxTbgaDzvN8SMs7iN8Gy7mgHfgXAIfx/UuLnEMK/ATs/ApBzwF7zA9QdcUgqfiIybhCjbn1LjyOZNG6zcWFi6UumLrcK0EvACxxcJOY19B1nexHB8wB79KwOF7A6vxGbMzR2t+bXxOYX/9wp26uvLdmGoU37fjQkbW0YwHk98iPO0GPAFvk1yPM0YsEnqDubiPpc2L5mYc5w7haAoQ8/iyTdYx+6Pp9z042ws4muN12t8ZSo+5/Eg9MTa73UhdnTmfapwLjuWzq5VzidRxPmod9ZqcQf6a6hvz/5eVgiNALIUZqW7xF6lp07A7rcZQqKWVgk/gQIp0K812M/BNrEoPT9ZGqqca14OGhCF902I7VQmNd7mOr8Vm0PruDRl3tgBHQ4VfWPzeUu5SqSNYbKF4W91r02DL0np90q8aZzRznks3GedF7uA1NPAf35lTH+7QWpkAAAAASUVORK5CYII=" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <section class="newsletter">
+        <div class="news">
+            <h1>Sign Up For Newsletters</h1>
+            <p>Get E-mail updates about out latest shop and <span>special offers</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your Email address">
+            <button class="sign-up">Sign Up</button>
+        </div>
+    </section>
+
+
+
+    <!-- footer section  -->
+    <footer>
+        <!-- col-1 -->
+        <!-- <div class="col-1">
+            <img src="/img/logo.png" alt="">
+            <h5>Contact</h5>
+            <p><strong>Adress:</strong> Lorem ipsum dolor sit amet .</p>
+            <p><strong>Phone:</strong>+0112222365/(+91)01239585</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon-Sat</p>
+        </div> -->
+        <!-- col-1 ends here  -->
+        <div class="follow">
+            <div class="col-1">
+                <img src="/img/logo.png" class="caria" alt="">
+                <h5>Contact</h5>
+                <p><strong>Adress:</strong> Lorem ipsum, Lorem ipsum dolo.</p>
+                <p><strong>Phone:</strong>+0112222365/(+91)01239585</p>
+                <p><strong>Hours:</strong> 10:00 - 18:00, Mon-Sat</p>
+                <div class="follow-us">
+                    <div class="follow-us-1">
+                        <h5>Follow Us : </h5>
+                        <div class="social-section">
+                            <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAAAXNSR0IArs4c6QAAAwlJREFUaEPtmEvITVEUx3+fEQbeRFKKojAwoJQQiohI9MmjPIuQiZERkuQ18ojIIxkgr2SiKO+BAVESKeSZT5RHKPprXx33u/ucvfb57qlbZ01ut7P+a/332mutvfZuogGlqQE5U5IuatfKSJeRTolA0ekxHBgM9AQeA9eAL9YdKor0EmAz0L4GwRPABuBN4ltfYAVwEbhVjUkjfQhYBXy1RiKh3wHYD0zLsPEZmO8WtRiYDNx2v62gPtLTgaMOOBP4Fkl8JyASVnkFTAJe1AL6SG8E1jiAtkfEvxs9TwBOGzFSF9FZQD9gCrAXeJK04yN9GJiRUHwELAUeGEicA8Ya9Cuqyu3e7s8y4GRoTu8DmquUfwLbAG35rwwy7QBtca3CC1nHb2AtcMSSHuuBdR7r9wBFQC3LJ0OB6yHsPDra1VM+vC89hgA3MpxecYYvAKr+pIwBzkeSVgqOTsOmtbzjwNRAxzokXroiUk5qe3cFYqvV7gNatFfSSHd30a4URSQHM8zbnyuWfKS3Aw+B58BWYKDZdTzgDLAoJtKbgNXxfnMhFaQtMaTnAbtzuY4HzwUuxZDuAtwFlNdFywDgQwxpYbRiHaFFyk13dKf6zBpNdcDooClKNO9oUMtFWuCFgAqzc5axnN81AqtLZY7CWZEWD51OmiU0467MSSwNfiBldPgPF0JalTyqjmRlWmPvMOB9iJ8Q0hPThpcQJwE6Sr8dAXp/VUJIS089W727HqJZXSmYNe7+8x1KWoDqi0FbLOATMB54ajFmIS27/YHZwAhAzwF6Csgjuk6pN5vESrpivBuwx3dbDmDwA5gDXA3QbaUSQ1q5rXeKHjEOgXfAAuBOJD6oEDWHKB1GOmd55uvL7hEmqLX5FlUr0svdjaWPuxV3io1IAtfiXpgOtoEtb6S7utuwhqZeORw9A465wSv2wScqp8e5yOveNihgAboj6q3irBtvAyA2FWshqvh03KrVadbuCLx1bxwi+xr4aKNg17aStnuoA6IkXYeg1jRZRrqMdEoEGjI9/gBCvHUuoANK+wAAAABJRU5ErkJggg==" />
+                            <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAAAXNSR0IArs4c6QAAAV9JREFUaEPt2K9KREEUx/HPgthEQUF9AgW1ic03MPoMGgwWq8GgYZ/BYLFYfQVBwWjwTxJUsKrJIMjABsPe68w67t4Lc+CmPZz58ju/OWeZjhZGp4XMCvSwulaUrlF6BqtYwEfve8cV3lI79J9Kr2Afa5iqANvARROgx3CI7QiYxkAfYDcCOKQ0AnoRl0SP0kZAH2MzUuVGKB0u9SMm+0B/4gTXeP3x+82op8cEnipU3kPoQpbIOfLmcFdBFcbeQxbihAsTc14d9BJeYorE5ORUeh63FYcu4zkGKCanQDdd6XWcx7Tyl5xpfKXWGdQeOaCDx4PXk2OU0OHfXVjjyTFK6FPsJBP/YU7nsMcRum2D3sLZMKH7nTWL+7YtlwJdZ5tBp0exR+plLEqX6VHjmWKPYo9ij2oFyhova7xGgfHeA3q/lPCGF97zskTOOZ0FKKZIgY5RKUdOUTqHijE1vgGNnE0uzxMi7wAAAABJRU5ErkJggg==" />
+
+                            <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAAAXNSR0IArs4c6QAABO9JREFUaEPtmWXILVUUhp9rYKBid4GI3T8sbExEQUWxWwxEf9iBit0dV0X0h91ig4lit5jYYoJioWDyfKx92Xfu7Jk5wzkXPrwvfHxnZtZe8561117r3ftMYBxiwjjkzDTSU2vW/neRXhxYGJihR4T/Ar4GPusxduCcPhzYAlirz8sKY54HHgauAv7o4rdreqwKXAMs3cVpT5sPgYOAl9vGdyF9GHBKjaMfgHeAZ4F/216UPTed1geWB2arGXcScHGTvzbSawCPZQ6eAC4FXgN+HIBoyXShSLUzAD8nbAy8WhrURvo5YLkYfBlwwhCI1rkw4tfGevH5u8DafUibX2fGQBeLC3CY2ABYF/gAuAOYJ2ZwjnjJccAVdS9sivQjwJoxaGvgmSEy3g1w5sRHwNnAbcB+wHlx/wVg80FI+22toX6pn4ElBlxsMwPLAu8VytjxwJEZoYuAk4H5AKuIcHEvCfxUJV6KtBE20sIIG+k2LAIcCqwDrABMD/wNvAW4NlzAX4WTHSKHk88dgUfj4n1ggfi8KfBSV9IbAveE8d3A3g2MJSfZo4FZGux+A04HJsaXkahl71Pg+mycQVoxrrevVK+x26VIbwncHANvAKzVdZgOeLCmQ9rZjJgpMlNloKS2Af4p+Hwoqxy7Ag90jfROERHtndYTCy84olIGXweOia6mvrCR2PKtQitlPpoayH3RfDTfB7irK+l8dZ8b01od6xQ+Fbnrs+uAowDJVjEjcAGwezz4E1gvFmrV9l7Acij2Be7sStocvjCMjZIlqYpLgD3i5puA66A05ZoZdbvrKjFGLZNXkOS/N+n9ASMsTstqZ07clr5a3LCeWlfboOZw+kWpYeXpMVCkNT4/nJ8F+JfDBfgt4LQLdcPvbYyBWbOyp32uN9Jwc1jtIQ6IpjOZ61L1cNVeHpYqLhdODpvNG3FD8st0IJxMPgbmjgt1jZuBHDcBW8WNgwGvO5HeJev7kreD5egbaTvt5+HIsujOp7oOLLWWXHEIcOOwSOvnScDNgVBMmaNtyJvWi8BmNQNuzTTHgcAtfUiXJKn1O5WwxwG7V9NmwNm5P9q8PJSi1vkqbgds38KC4PVkKOV0nh4l0jYLo20bF5awYxvqtNVor7BtqtPKho3CTvskJyYRL5HeGbgyrJrEv3pDognWaxuMIkexZG1WfJ0TIirZNXVEZYGiSwzUxnMVdnUQqZlJnHK1QtLdyaZJe7inVDWWUskG5DZPbBtdt1N6OD1Ok7BD7VnHOO4piNTCLpqmTYUkrURukk2PEnKVp7B6umpYeolHBUnH+j8tjIZ3jTUEt0hqEjcBCTaRt4FT6wjUOPwEmCvuK7bcSHSKtLo4FX2nesEmtjXP7HRuCr4EvhlgrKdWrouERYFfu5LWzlOfdJK0HWBZGzVyzSN5tcoUaMpBczRpDgV9dbEN+wvMCbwSu3J918mHsXe2nXvY5dx9iFIzGAZ5zz2sUklz/AKsDnw/aKS1r54wGXFrs01lWLBCqNdzxVfbvtML2yKtnZsAD25yuLg8ryhB5fcFsFRWCepsVwZmrzxw7biGiuhC2jZtO7XzzTus8Nb48XzD3ZC1vPHItwvp5N+8M+KbjOB82i5oTk9xMNMnp5sC2/RLwPzAYpEi39U4maq/BIwwO7q7HiQ9unsdseU00iMO8CT34zLS/wF1kPYuAJST8wAAAABJRU5ErkJggg==" />
+                            <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAAAXNSR0IArs4c6QAAAoxJREFUaEPt2EnITXEYBvDfp0wZEmXImCklSSxMSZSUqeyUWIiFsmGBKPMKexs2SlIsLCSxQFkoYiEUC1PGDGEhhd6vc3W73zn3fv73ftdH913d7jnP8z7nPe90/m3+QWv7BzVriW7WW2tFuhXpKhFopUd3So8+mI9xGIlvtLfKERiOfgVin+BpwbUPeIn32fWfeI1HnXnwaunRH7uxHn07Q9age+JhL+AQvuRxFomeh5MY3CAhKTTxFtbiRiU4T3Rv3M5SIcVZIzHPMQPfy0nzRG/BgUZ6rpNrB47VEn0aS+t01Ej4eayrJfpO1ika6bgervuYU0v0x3o8dAH2E8ZWEz0EjxMdR5Wfxa4u6DqDqomejJuJoq9jBQZiOzaiVyJXJWwi3pX+rOwes3A50dE1rCzDxgQ9iOWJfOWw6Yih026VohcgqjXFSpGuxM7FYUxNIc0ws/GgSPQSnEkkLxJdoluDvRiWwB8T+l6R6MVZMSXwuopVNYBRUFcw4Q8dLMqmdG56xMVzf0hYur2W6NXYj1EJ/BHMW12R00WiI6pHsTBBbAlSNT0i4S8mkleKjtV2JzahZyJnCTazfH5Udo9piIJKsZLo4CwV3dAUohzMJLwtSo8Yl3cTHYXoPTiC6PeNtKoTMT6dXiR6+1rl0yuRsh32ClPKCfL26WcYUI+XBmNjrYj58dvyRMf3WUyx7mKnsLmW6Kj4WHi6i23FiVqix5dPn7+sPOqrw85S9DW+DMcRZx5/0zbkrRXVzj2iN27L8ntMk5XHcrQPl/L8ppzlxcnS6IIFv0fZyVOM3qLTp89ZK3uDH5mw+B0780PE0UGhpYhuctA7umuJbtYraEW6FelW92hWDvxvkf4FNkVdLq40NjUAAAAASUVORK5CYII=" />
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="About-us">
+                <h4>About Us</h4>
+                <div class="links_Ab">
+                    <a href="">About us</a>
+                    <a href="">Delivery Information</a>
+                    <a href="">Privarcy Policy</a>
+                    <a href="">Term & Conditions
+                    </a>
+                    <a href="">Contact us </a>
+                </div>
+                <!-- My Whistlist , Track My Order , Help -->
+            </div>
+            <div class="My-Account">
+                <h4>My Account</h4>
+                <div class="links_MY">
+                    <a href="">Sign in</a>
+                    <a href="">View Chart</a>
+                    <a href="">My Whislist</a>
+                    <a href="">Track My Order</a>
+                    <a href="">Help</a>
+                </div>
+            </div>
+            <div class="Install-App">
+                <h4>Install App </h4>
+                <p>From App Store or Google Play </p>
+                <div class="img_app">
+                    <img src="/img/pay/app.jpg" class="app" alt="">
+                    <img src="/img/pay/play.jpg" class="app" alt="">
+                </div>
+                <p>For Secured Payment gateway </p>
+                <div class="payment-apps">
+                    <img src="/img/pay/pay.png" alt="">
+                </div>
+            </div>
+    </footer>
+    <script>
+        var MainImg = document.getElementById("mainImage");
+        var smallimg = document.getElementsByClassName("image-1");
+
+
+        // smallimg2[0].onclick = function () {
+        //     MainImg.src = smallimg2[0].src;
+        // }
+        // smallimg2[0].addEventListener('click', function () {
+        //     MainImg.src = smallimg2[0].src;
+        // })
+
+        // debugger;
+
+        // smallimg[0].addEventListener('click', function () {
+        //     for (var i = 0; i < 4; i++) {
+        //         MainImg.src = smallimg[i].src;
+        //     }
+        // });
+
+        // smallimg[2].onclick = function () {
+        //     MainImg.src = smallimg[2].src;
+        // }
+        // solve for the for loop ine question 
+        smallimg[0].onclick = function () {
+            MainImg.src = smallimg[0].src;
+        }
+
+        // Sets the onclick event handler for the second element in the smallimg array. When the element is clicked, it sets the src attribute of the MainImg element to the src attribute of the clicked element.
+        smallimg[1].onclick = function () {
+            MainImg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function () {
+            MainImg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function () {
+            MainImg.src = smallimg[3].src;
+        }
+
+    </script>
+    <script src="index.js"></script>
+</body>
+
+</html>

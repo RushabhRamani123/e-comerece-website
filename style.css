@@ -440,14 +440,18 @@ color: white ;
 background-color: #088178;
 border: 1px solid #088178;
 }
+.space{
+    margin-right: 5rem ;
+}
 .follow{
     display: flex ;
     margin: 2rem ;
+    gap: 4rem ;
 }
 .col-1{
     display: flex ;
     flex-direction: column;
-    gap:1rem ;
+    /* gap:1rem ; */
  
 }
 .col-1 .caria {
@@ -662,7 +666,26 @@ input[type="text"] {
     gap: 0.5rem;
     margin: 2rem;
 }
+#contact-details
+{
+    display: flex;
+    flex-direction: column-reverse;
 }
+.map_dis{
+    width: 100% ;
+}
+.map_dis iframe{
+    width: 100%;
+}
+#contact-details
+{
+    /* display: flex; */
+    /* flex-direction: column; */
+    flex-wrap: wrap-reverse;
+    margin: 0px ;
+}
+}
+
 .prodetails .single-pro {
     width: 77%;
     margin: 50px;
@@ -1025,4 +1048,8 @@ display: flex;
         margin-bottom: 20px;
         /* border-radius: 10px; */
 
+    }
+    .form-details{
+        border: 1px solid black ;
+        padding: 24px ;
     }
